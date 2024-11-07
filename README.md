@@ -8,7 +8,7 @@ The Gishushu Traffic Light System is designed to manage traffic flow and pedestr
 Specifications
 --------------
 1. Directions and Movements
-===========================
+---------------------------
 
 The intersection has the following vehicle directions:
 
@@ -19,18 +19,17 @@ West-Bound: W-S, W-W, W-N, W-E
 Each direction allows vehicles to proceed based on the Green, Yellow, or Red state assigned to their corresponding phase.
 
 2. System Phases
-=================
+----------------
 
 The system operates in four main vehicle phases (A, B, C, D) and two pedestrian crossing phases (North-South and East-West). These phases proceed in a cyclical manner:
 
 Vehicle Phase A: Green light for North-bound traffic (N-N, N-E, N-W).
----------------
+
 
 Green: Vehicles in Phase A move freely.
 Yellow: Warning phase before Red.
 Red: Vehicles stop to allow pedestrians or other vehicles to proceed.
 Vehicle Phase B: Green light for South-bound traffic (S-S, S-E, S-W).
----------------
 
 Same cycle as Phase A.
 Vehicle Phase C: Green light for East-bound traffic (E-S, E-E, E-N, E-W).
@@ -40,7 +39,7 @@ Vehicle Phase D: Green light for West-bound traffic (W-S, W-W, W-N, W-E).
 
 Same cycle as Phase A.
 3. Pedestrian Crossing Phases
-==============================
+------------------------------
 Pedestrians can cross in parallel to vehicle phases, minimizing traffic disruption:
 
 Pedestrian Crossing - North-South:
@@ -52,7 +51,7 @@ Pedestrian Crossing - East-West:
 Pedestrians cross in the East-West direction.
 Vehicle Status: Vehicles in Phase C and Phase D stop (Red light), while Phases A and B remain in their current state.
 4. Cycle Sequence
-=================
+-----------------
 The system follows a repeating cycle for each phase:
 
 Phase A (North-bound) - Green → Yellow → Red
@@ -70,7 +69,7 @@ This cycle ensures efficient vehicle movement while providing safe pedestrian cr
 Yellow Light for Vehicles: Each vehicle phase includes a Yellow light as a transition before Red to help drivers anticipate stops.
 Parallel Pedestrian Crossings: Pedestrians cross parallel to vehicle flows, allowing safe pedestrian movement while keeping some vehicle directions active.
 6. Key Features
-===============
+----------------
 State-Dependent Phasing: Transitions between phases are controlled by timers and states, ensuring no conflicts between vehicle and pedestrian crossings.
 Parallel Pedestrian Integration: Allows pedestrian crossings alongside vehicle flow to optimize intersection efficiency.
 
